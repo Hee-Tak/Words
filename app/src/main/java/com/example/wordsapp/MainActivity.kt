@@ -42,3 +42,9 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+
+/**
+ * 옵션 메뉴를 구현하여
+ * 사용자가 목록 및 그리드 레이아웃 간에 전환할 수 있는 버튼을 표시
+ *
+ */

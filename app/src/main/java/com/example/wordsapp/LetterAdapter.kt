@@ -87,3 +87,8 @@ class LetterAdapter :
         }
     }
 }
+/**
+ * MainActivity 의 RecyclerView 에서 사용.
+ * 각 문자는 (현재 비어 있는) onClickListener 가 포함된 버튼
+ * 여기에서 버튼 누름을 처리하여 DetailActivity 로 이동.
+ */

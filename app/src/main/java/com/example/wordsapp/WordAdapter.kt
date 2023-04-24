@@ -106,3 +106,9 @@ class WordAdapter(private val letterId: String, context: Context) :
         }
     }
 }
+
+/**
+ * RecyclerView 의 DetailActivity 에서 단어 목록을 표시하는 데 사용함
+ * (아직 이 화면을호 이동할 수 없지만) 각 단어에도 onClickListener 가 있는 상응하는 버튼이 있다.
+ * 여기에서 단어의 정의를 표시하기 위해 브라우저로 이동하는 코드를 추가.
+ */
