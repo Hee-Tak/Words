@@ -69,6 +69,7 @@ class LetterAdapter :
             val intent = Intent(context, DetailActivity::class.java)
 
 
+
         }
 
     }
