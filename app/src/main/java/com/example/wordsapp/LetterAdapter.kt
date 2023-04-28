@@ -67,11 +67,15 @@ class LetterAdapter :
         holder.button.setOnClickListener{
             val context = holder.itemView.context
             val intent = Intent(context, DetailActivity::class.java)
+            intent.putExtra("letter", holder.button.text.toString())
+            //extra?
+            //인텐트는 명령어 집합일 뿐이다. 대상 활동의 인스턴스는 아직 없음.
+            //대신 extra는 나중에 검색할 수 있도록 이름이 지정된 숫자나 문자열과 같은 데이터. 함수를 호출할 때 인수를 전달하는 것과 비슷
 
-
+            context.startActivity(intent)
+            //여기까지가 명시적 인텐트 설정인듯듯
 
         }
-
     }
 
     // Setup custom accessibility delegate to set the text read with
