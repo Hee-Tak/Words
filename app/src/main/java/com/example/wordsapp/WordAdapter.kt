@@ -16,6 +16,7 @@
 package com.example.wordsapp
 
 import android.content.Context
+import android.net.Uri
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
@@ -81,6 +82,15 @@ class WordAdapter(private val letterId: String, context: Context) :
 
         // Set the text of the WordViewHolder
         holder.button.text = item
+
+        holder.button.setOnClickListener {
+            val queryUrl: Uri = Uri.parse("${DetailActivity.SEARCH_PREFIX}${item}")
+            //Uri : Uniform Resource Identifier
+            //Url : Uniform Resource Locator
+            //Uri는 형식에 관한 좀 더 일반적인 용어. 모든 Url은 Uri지만, 모든 Uri가 Url인 것은 아님.
+            //예를 들어, 전화번호의 주소 등 다른 URI는 tel: 로 시작하지만 이는 URL이 아닌 URN 또는 Uniform Resource Name 으로 간주됨
+            //두 가지를 모두 나타내는 데 사용되는 데이터 유형을 URI 라고 함.
+        }
 
     }
     // Setup custom accessibility delegate to set the text read with
