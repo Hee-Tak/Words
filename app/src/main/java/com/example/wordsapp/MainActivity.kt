@@ -56,6 +56,8 @@ class MainActivity : AppCompatActivity() {
     private fun setIcon(menuItem: MenuItem?) {
         if(menuItem == null)
             return
+
+
     }
 }
 
